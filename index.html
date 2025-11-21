@@ -53,11 +53,16 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--hero-->
     <main class="page-main">
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button" data-modal-open>
@@ -65,7 +70,7 @@
           </button>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages hidden">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="principles-list">
@@ -121,7 +126,7 @@
         </div>
       </section>
       <!--team-->
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -297,7 +302,7 @@
         </div>
       </section>
       <!--portfolio-->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -420,7 +425,7 @@
       </section>
     </main>
     <!--footer-->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container">
         <div class="footer-info">
           <a class="logo footer-logo" href="./index.html"
@@ -488,7 +493,7 @@
       </div>
     </footer>
     <!--modal windows-->
-    <div class="backdrop" id="modal" data-modal>
+    <div class="backdrop hidden" id="modal" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
