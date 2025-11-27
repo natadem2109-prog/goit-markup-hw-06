@@ -313,16 +313,22 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    image-set(
-      url(../images/people-office1.jpg) 1x,
-      url(../images/people-office2x.jpg) 2x
-    );
+    url(../images/people-office1.jpg);
   background-size: cover;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 320px;
   background-repeat: no-repeat;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office2x.jpg);
+  }
 }
 .main-title {
   font-weight: 700;
